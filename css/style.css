@@ -325,7 +325,7 @@ body{
 
 .testimonial-text {
     font-size: 1.4rem;
-    line-height: 1.7;
+    line-height: 1.2;
     color: #6c757d;
     margin-bottom: 1.5rem;
 }
@@ -388,3 +388,45 @@ body{
         justify-content: center;
     }
 }
+
+#rpl-title h1 {
+    color: #f5a20d;
+    font-size: 50px;
+  }
+  #rpl-title p {
+    color: #828893;
+    font-size: 20px;
+  }
+  #rpl-desc h1 {
+    color: #f5a20d;
+    font-size: 30px;
+  }
+  #rpl-desc p {
+    color: #828893;
+    font-size: 16px;
+  }
+  #rpl-foto {
+    margin-top: 150px;
+  }
+    #program-b .btn-join{
+      width: 100px;
+    border-radius: 20px;
+    color: #ffc107;
+    background-color: white;
+    }
+    #program-b .btn-join:hover {
+      background-color: #ffc107;
+      color: white;
+      border: 2px solid white;
+    }
+    #program-a .btn-join{
+      width: 100px;
+    border-radius: 20px;
+    color:white;
+    background-color:  #ffc107;
+    }
+    #program-a .btn-join:hover {
+      background-color: white;
+      color:  #ffc107;
+      border: 2px solid  #ffc107;
+    }

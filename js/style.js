@@ -16,3 +16,31 @@ $(window).on('scroll', function () {
         $('#navbar-brand-title').removeClass('text-white');
     }
 })
+
+document.getElementById("webDevTitle").onclick = function() {
+    toggleText("webDevText");
+};
+
+document.getElementById("mobileDevTitle").onclick = function() {
+    toggleText("mobileDevText");
+};
+
+document.getElementById("jobTitle").onclick = function() {
+    toggleText("jobText");
+};
+
+
+function toggleText(id) {
+    var textElement = document.getElementById(id);
+    if (textElement.style.display === "none" || textElement.style.display === "") {
+        textElement.style.display = "block";  // Menampilkan teks
+        textElement.style.maxHeight = textElement.scrollHeight + "px";  // Menyesuaikan tinggi teks sesuai konten
+        textElement.style.opacity = "1";      // Menampilkan teks dengan transisi opacity
+    } else {
+        textElement.style.maxHeight = "0";   // Menyembunyikan teks
+        textElement.style.opacity = "0";     // Menyembunyikan teks secara perlahan
+        setTimeout(function() {
+            textElement.style.display = "none";  // Menyembunyikan elemen setelah transisi selesai
+        }, 500);  // Waktu harus sama dengan durasi transisi
+    }
+}
